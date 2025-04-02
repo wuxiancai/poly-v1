@@ -1555,8 +1555,6 @@ class CryptoTrader:
         except Exception as e:
             self.logger.error(f"登录操作失败: {str(e)}")
             return False
-        finally:
-            self.login_running = False
 
     def is_login_successful(self):
         """检查登录是否成功"""
